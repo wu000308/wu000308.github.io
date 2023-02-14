@@ -5,6 +5,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: darkslategray;
+    /* Adding background image */
+    background-image: url(../images/white_brick_wall.png);
 }
 
 h1 {
@@ -26,11 +28,29 @@ nav ul {
 nav ul a {
     color: darkslategrey;
     text-decoration: none;
+    font-size: 1.5rem;
+    /* 1.5rem = 1.5 x 16px = 24px */
 }
 
 /* Selecting element with ID value */
 #treatofweek {
-    background-color: cadetblue;
+     /* color image repeat position-x position-y */
+    background: cadetblue url(../images/bread.jpg) no-repeat center;
+
+    /* background-size */
+    background-size: cover;
+
+    font-size: 1.25rem;
+    /* 1.25 x 16px =20px */
+
+    padding: 1em;
+    /* 1 x 20px = 20px */
+
+    /* viewport based unit */
+    /* width: 100vw; */
+    /* scroll wheel bc it has space coming from the parent, it goes out of the screen which is not ideal */
+    /* height: 100vh; */
+    /* height is 100% of the browser size and it dynamic */
 }
 
 .blue-link {
