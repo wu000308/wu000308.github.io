@@ -51,8 +51,14 @@ nav ul a {
     Combinators
     direct child selector - will only select child of the parent
 */
+
+/* CSS typography properties */
 article>p {
     font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
 }
 
 /* Adjacent sibling selector - Selects the element that is the very next sibling to the selected element, if any exists */
