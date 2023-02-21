@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #aad4cf;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+img {
+    width:100%
+}
+
+.banner {
+    position:relative;
+}
+h1 {
+    position:absolute;
+    top:25%;
+    text-align: center;
+    color:white;
+    padding: 2em 0;
+    width:100%;
+}
