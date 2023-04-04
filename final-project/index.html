@@ -5,18 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom Sytles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Font link styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <!-- Icon Link Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <title>Three Star Media</title>
 </head>
 
 <body>
     <!-- Site Header -->
     <header>
-        <div class="nav-bar">
-            <a href="index.html"><img src="image/logo.png" alt="Three Star Media Logo" class="logo"></a>
-            <!-- Navigation -->
+        <!-- Navigation -->
+        <div class="nav width">
             <nav>
+                <a href="index.html"><img src="image/logo.png" alt="Three Star Media Logo" class="logo"></a>
                 <ul class="navlist">
                     <li><a href="index.html" class="current">Home</a></li>
                     <li><a href="#about-us">About Us</a></li>
@@ -24,46 +33,55 @@
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <form>
+                    <input type="text" placeholder="Search">
+                    <button type="submit" class="searchbtn"><i
+                            class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                </form>
             </nav>
-            <form>
-                <input type="text" placeholder="Search">
-                <button type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
-            </form>
         </div>
-        <div class="banner">
-            <h1>Welcome to Three Star Media</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut repellendus, ad molestiae incidunt deleniti
-                ipsam rerum modi vero? Consequatur, quo. Mollitia expedita deleniti eius ea. Voluptatibus odit voluptas
-                est at.
-            </p>
-            <a href="#contact" class="connect-btn">Connect with us<i class="fa-solid fa-play"></i></a>
+        <div class="banner width">
+            <div class="bannercontent max-width">
+                <h1>Welcome to Three Star Media</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut repellendus, ad molestiae incidunt
+                    deleniti
+                    ipsam rerum modi vero? Consequatur, quo. Mollitia expedita deleniti eius ea. Voluptatibus odit
+                    voluptas
+                    est at.
+                </p>
+                <a href="#contact" class="connect-btn">Connect with us<i class="fa-solid fa-play"></i></a>
+            </div>
         </div>
     </header>
     <!-- starting main content of the page -->
     <main class="content">
         <!-- Section 1 -->
-        <section class="sec1" id="about-us">
-            <img src="image/about-us.jpg" alt="Lounging Area">
-            <div>
-                <h2>About Us</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto error eum molestiae, porro aperiam
-                    mollitia similique! Totam, quibusdam tempora cum nostrum voluptates numquam ut molestiae
-                    consequatur, recusandae nemo facere praesentium.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam odit voluptates iste asperiores,
-                    magnam, rerum consequuntur unde amet, tempora odio voluptatum adipisci veniam? Consequuntur delectus
-                    eligendi eius asperiores inventore eos?
-                </p>
+        <section class="sec1 width" id="about-us">
+            <div class="about max-width">
+                <img src="image/about-us.jpg" alt="Lounging Area">
+                <div>
+                    <h2>About Us</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto error eum molestiae, porro
+                        aperiam
+                        mollitia similique! Totam, quibusdam tempora cum nostrum voluptates numquam ut molestiae
+                        consequatur, recusandae nemo facere praesentium.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam odit voluptates iste asperiores,
+                        magnam, rerum consequuntur unde amet, tempora odio voluptatum adipisci veniam? Consequuntur
+                        delectus
+                        eligendi eius asperiores inventore eos?
+                    </p>
+                </div>
             </div>
         </section>
         <!-- Section 2-->
-        <section class="sec2" id="service">
-            <div class="cards">
+        <section class="sec2 width" id="service">
+            <div class="cards max-width">
                 <h2>Our Services</h2>
-                <div class="digital">
+                <div class="digital card">
                     <img src="image/digital.jpg" alt="People using computer">
                     <h3>Digital Transformation</h3>
                     <p>
@@ -73,7 +91,7 @@
                     </p>
                     <a href="#" class="btn">Digital Plans<i class="fa-solid fa-play"></i></a>
                 </div>
-                <div class="marketing">
+                <div class="marketing card">
                     <img src="image/marketing.jpg" alt="A computer on a desk">
                     <h3>Marketing</h3>
                     <p>
@@ -83,7 +101,7 @@
                     </p>
                     <a href="#" class="btn">Marketing Plans<i class="fa-solid fa-play"></i></a>
                 </div>
-                <div class="video">
+                <div class="video card">
                     <img src="image/video.jpg" alt="People using phone">
                     <h3>Video Production</h3>
                     <p>
@@ -93,7 +111,7 @@
                     </p>
                     <a href="#" class="btn">Video Plans<i class="fa-solid fa-play"></i></a>
                 </div>
-                <div class="web">
+                <div class="web card">
                     <img src="image/web.jpg" alt="A phone and a pen">
                     <h3>Web Development</h3>
                     <p>
@@ -103,7 +121,7 @@
                     </p>
                     <a href="#" class="btn">Web Plans<i class="fa-solid fa-play"></i></a>
                 </div>
-                <div class="print">
+                <div class="print card">
                     <img src="image/print.jpg" alt="Colorful newsracks on the street">
                     <h3>Print</h3>
                     <p>
@@ -116,23 +134,20 @@
             </div>
         </section>
         <!-- Section 3 -->
-        <section class="sec3" id="vison">
-            <div>
-                <img src="image/vision.jpg" alt="paper boats with blue background">
-                <div>
-                    <h3>Our Vison</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem accusamus nesciunt eius
-                        soluta maiores error ex magni enim laborum, accusantium dolore, natus cupiditate cum aut
-                        sapiente doloremque. Obcaecati, recusandae? Saepe?
-                    </p>
-                    <a href="#" class="learn-btn">Learn More<i class="fa-solid fa-play"></i></a>
-                </div>
+        <section class="sec3 width" id="vison">
+            <div class="max-width">
+                <h3>Our Vison</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem accusamus nesciunt eius
+                    soluta maiores error ex magni enim laborum, accusantium dolore, natus cupiditate cum aut
+                    sapiente doloremque. Obcaecati, recusandae? Saepe?
+                </p>
+                <a href="#" class="learn-btn">Learn More<i class="fa-solid fa-play"></i></a>
             </div>
         </section>
         <!-- Section 4 -->
-        <section class="sec4" id="team">
-            <div>
+        <section class="sec4 width" id="team">
+            <div class="max-width">
                 <h2>Our Team</h2>
                 <img src="image/john.jpg" alt="A man">
                 <div class="john">
@@ -157,64 +172,71 @@
             </div>
         </section>
         <!-- Section 5 -->
-        <section class="sec5" id="contact">
-            <h2>Contact Us</h2>
-            <div class="message">
-                <h3>Send us a message</h3>
-                <!--Adding a form-->
-                <form action="index.html" method="get">
-                    <div>
-                        <label for="fullname">Full Name</label>
-                        <input id="fullname" type="text" name="name">
-                    </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input id="email" type="email" name="email">
-                    </div>
-                    <div>
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message"></textarea>
-                    </div>
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-            <div>
-                <h3>Hours of operation</h3>
-                <!--Adding table for hours of operation-->
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Days</th>
-                            <th>Hours</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Monday - Friday</td>
-                            <td>9AM - 6PM</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday - Sunday</td>
-                            <td>Closed</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <section class="sec5 width" id="contact">
+            <div class="max-width">
+                <h2>Contact Us</h2>
+                <div class="message">
+                    <h3>Send us a message</h3>
+                    <!--Adding a form-->
+                    <form action="index.html" method="get">
+                        <div>
+                            <label for="fullname">Full Name</label>
+                            <input id="fullname" type="text" name="name">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email">
+                        </div>
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message"></textarea>
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
 
-            </div>
-            <div class="map">
-                <h3>Location</h3>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1159.062565042224!2d-75.75652349001076!3d45.34983645050307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680029710582!5m2!1sen!2sca"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div>
+                    <h3>Hours of operation</h3>
+                    <!--Adding table for hours of operation-->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Days</th>
+                                <th>Hours</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday - Friday</td>
+                                <td>9AM - 6PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday - Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="map">
+                    <h3>Location</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1159.062565042224!2d-75.75652349001076!3d45.34983645050307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680029710582!5m2!1sen!2sca"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </section>
     </main>
     <!-- Site Footer -->
     <footer class="site-footer">
-        &copy; Copyright Three Star Media, 2020
-        <div>
-            All images are taken from <a href="https://unsplash.com/">Unsplash</a>
+        <div class="max-width">
+            <p>
+                &copy; Copyright Three Star Media, 2020
+            </p>
+            <p>
+                All images are taken from <a href="https://unsplash.com/">Unsplash</a>
+            </p>
         </div>
     </footer>
 </body>
