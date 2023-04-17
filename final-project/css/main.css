@@ -1,13 +1,16 @@
 /* Global Styles */
 
+/* Set font family for the whole document */
 html {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Set line height for the body */
 body {
     line-height: 1.5;
 }
 
+/* Set font weight and margins for headings */
 h1,
 h2,
 h3,
@@ -17,8 +20,12 @@ h5 {
     margin: 1em 0 0.5em
 }
 
+
+/* Set specific styles for h1,h2,h3,h4 */
 h1 {
-    font-size: 5.063rem;
+
+    font-size: 4.063rem;
+    line-height: 4.063rem;
 }
 
 h2 {
@@ -31,4 +38,417 @@ h3 {
 
 h4 {
     font-size: 1.5rem;
+}
+
+/* Set outside container to 100% */
+.width {
+    width: 100%;
+}
+
+/* Set maximum width to the inner container and center the element */
+.max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* Set images to be responsive */
+img {
+    width: 100%;
+}
+
+/************************************
+           Mobile Styles
+*************************************/
+/* Navigation */
+/* Set background color and remove padding from the nav element */
+.nav {
+    display:block;
+    background-color:#222;
+    padding: 0;
+}
+
+/* Set link color to inherit */
+a,
+a:link,
+a:visited {
+    color: inherit;
+}
+
+/* Set styles for links inside the navigation list */
+.navlist a,
+.navlist a:link,
+.navlist a:visited {
+    
+    display: block;
+    padding: 1.5em 0;
+    text-decoration: none;   
+    text-align: center;
+    color:#c78c06;
+    margin: 10px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+/* Set styles for links inside the navigation list when hovered, focused, or selected */
+.navlist a:hover,
+.navlist a:focus,
+.navlist a.current {
+    background-color: #c78c06;
+    color: inherit;
+}
+
+/* Set width, alignment, and padding for the logo */
+.logo {
+    width: 70px;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 0;
+}
+
+/* Set styles for the search bar */
+.searchbar {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+/* Set width, height, and margins for the search input field */
+form input {
+    width: 90%;
+    height: 40px;
+    margin: 10px;
+    margin-right: 0;
+    font-size: 1.25rem;
+}
+/* Set styles for the search button */
+form button {
+    border: 1px solid #c78c06;
+    color: #c78c06;
+    background-color: #222;
+    height: 40px;
+    width: 40px;
+    font-size: 1.5rem;
+    margin: 0;
+    align-self:center;
+    
+}
+/* Banner */
+/* Set background image and cover size, and padding for the banner */
+.banner {
+    background-image: url(../image/main-banner.jpg);
+    background-size: cover;
+    margin: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+/* Set text color for h1 and p elements inside header */
+h1 {
+    color: white;
+}
+
+header p {
+    color: white;
+
+}
+/* Set background color and alignment for the banner content */
+.bannercontent {
+    background: rgba(0,0,0,0.5);
+    text-align: left;
+    padding-bottom: 70px;
+}
+
+/* Set styles for the button on the banner  */
+.connect-btn {
+    background:#c78c06;
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 30px 30px;
+    position: relative;
+    top: 35px;
+    
+}
+/* Set styles for the p and h2 elements in the main content */
+main p {
+    padding: 10px;
+}
+
+main h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Set background color for the About Us section */
+.sec1 {
+    background-color: #ffe6ac;
+}
+
+
+/* Set the button styles and cards styles for Our Services section */
+
+.cards .btn {
+    text-decoration: none;
+    background: #222;
+    color: white;
+    padding: 30px;
+    display:inline-block;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.card {
+    background-color: #ffe6ac;
+}
+
+.cards h3 {
+    padding: 0.5rem;
+}
+
+
+
+/* Set the background image and button styles for Our Vison section */
+
+.sec3 {
+    background-image: url(../image/vision.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    color: white;
+}
+
+.learn-btn {
+    text-decoration: none;
+    border: 1px solid #c78c06;
+    background-color: rgba(0,0,0,0.5);
+    padding: 30px;
+    display:inline-block;
+    margin: 0.5rem;
+}
+
+/* -- Set the card styles for Our Team section -- */
+
+.teamcard {
+    background-color: #ffe6ac;
+    margin-bottom: 20px;
+    margin-top: -50px;
+    padding: 1rem;
+}
+
+.sec4 h3 {
+    margin-bottom: 0.2rem;
+}
+
+.sec4 h4 {
+    border-bottom: 2px solid #c78c06;
+}
+
+/* Set the form styles for Contact Us form */
+
+.contact-form input {
+    width: 100%;
+    height: 20px;
+    margin: 0;
+}
+
+.contact-form textarea {
+    width: 100%;
+    height: 100px;
+    
+}
+
+.contact-info {
+  justify-content: flex-start;
+}
+
+/* Set the button styles for the Send button */
+.sec5 button {
+    width: 80px;
+    margin-left: 0;
+    font-size: 1.2rem;
+    border: none;
+}
+/* Set the form styles for Hours of Operation form */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+thead tr th {
+    border:1px solid #222;
+    text-align: center;
+    background-color: #ffe6ac;
+}
+
+th, td {
+    border:1px solid #222;
+    text-align: left;
+    padding: 1em;
+}
+
+/* Set the styles for the footer */
+footer {
+    background-color: #222;
+    color:#c78c06;
+}
+
+/************************************
+           Desktop Styles
+*************************************/
+
+/* This media query targets screens with a minimum width of 760px */
+@media screen and (min-width: 760px) {
+ /* Display navigation list as flex container */
+    .navlist {
+       display: flex;
+       justify-content: space-between;
+    }
+/* Align list items vertically */
+    li {
+        align-self: center;
+    }
+ /* Reduce font size of form input on desktop */
+    form input {
+        font-size: 1rem;
+    }
+/* Navigation link styles */
+    .navlist a,
+    .navlist a:link,
+    .navlist a:visited {
+        display: inline-block;
+        padding: 20px;
+}
+    .navlist a:hover,
+    .navlist a:focus,
+    .navlist a.current {
+        background-color: #c78c06;
+        color: inherit;
+    }
+    /* Sets the background position for the banner */
+    .banner {
+        background-position: 50% 50%;
+    }
+    .bannercontent {
+        max-width: 80%;
+    }
+    /* Set the About Us section to be a grid container with two columns */
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        align-items: center;
+    }
+
+    .about-content {
+        padding: 1rem;
+    }
+/* Set the Our Service section to be a grid container with six columns and three rows */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr) ;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+            "heading heading heading heading heading heading"
+            "digital digital digital marketing marketing marketing"
+            "video video web web print print"
+        ;
+    }
+
+    h2 {
+        grid-area: heading;
+    }
+
+    .digital {
+        grid-area: digital;
+    }
+
+    .marketing {
+        grid-area: marketing;
+
+    }
+    
+    .video {
+        grid-area: video;
+    }
+
+    .web {
+        grid-area: web;
+    }
+
+    .print {
+        grid-area: print;
+    }
+
+    .cards p {
+        padding: 1rem;
+    }
+
+    .cards .btn {
+        display: block;
+    }
+
+    .card {
+        margin: 0.5rem;
+    }
+/* Set the Our Team section to be a grid container with two columns and three rows */
+    .team-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 10% auto auto;
+        align-content: center;
+        grid-template-areas: 
+        "heading2 heading2"
+        "john johntext"
+        "bobtext bob"
+        ;
+      }
+
+    .team-content h2 {
+        grid-area: heading2;
+    }
+
+    img .john {
+        grid-area: john;
+        
+    }
+    .team-content .john-text {
+        grid-area: johntext;
+    }
+
+    img .bob {
+        grid-area: bob;
+    }
+
+    .team-content .bob-text {
+        grid-area: bobtext;
+    }
+
+    .teamcard {
+        margin: 0;
+        padding: 0.5rem;
+    }
+    /* Set the Contact section to be a grid container with two columns and three rows */
+    .contact-us {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr auto auto;
+        grid-template-areas: 
+        "heading3 heading3"
+        "message location"
+        "hours hours"
+        ;
+    }
+    .contact-us h2 {
+        grid-area: heading3;
+    }
+
+    .contact-info {
+        grid-area: message;
+    }
+
+    .map {
+        grid-area: location;
+        padding-left: 1rem;
+    }
+
+    .operation {
+        grid-area: hours;
+    }
 }

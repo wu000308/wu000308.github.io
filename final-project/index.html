@@ -24,22 +24,32 @@
     <header>
         <!-- Navigation -->
         <div class="nav width">
-            <nav>
-                <a href="index.html"><img src="image/logo.png" alt="Three Star Media Logo" class="logo"></a>
+            <nav class="max-width">
+                
                 <ul class="navlist">
+                    <!-- Site Logo -->
+                    <li>
+                        <a href="index.html"><img src="image/logo.png" alt="Three Star Media Logo" class="logo"></a>
+                    </li>
+                    <!-- Navigation Links -->
                     <li><a href="index.html" class="current">Home</a></li>
                     <li><a href="#about-us">About Us</a></li>
                     <li><a href="#service">Services</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <!-- Search Bar -->
+                    <li>
+                        <form class="searchbar">
+                            <input type="text" placeholder="Search">
+                            <button type="submit" class="searchbtn"><i
+                                    class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </li>
                 </ul>
-                <form>
-                    <input type="text" placeholder="Search">
-                    <button type="submit" class="searchbtn"><i
-                            class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
-                </form>
+                
             </nav>
         </div>
+        <!-- Main Banner of the site -->
         <div class="banner width">
             <div class="bannercontent max-width">
                 <h1>Welcome to Three Star Media</h1>
@@ -50,17 +60,17 @@
                     voluptas
                     est at.
                 </p>
-                <a href="#contact" class="connect-btn">Connect with us<i class="fa-solid fa-play"></i></a>
+                <a href="#contact" class="connect-btn">Connect with us <i class="fa-solid fa-play"></i>  </a>
             </div>
         </div>
     </header>
     <!-- starting main content of the page -->
     <main class="content">
-        <!-- Section 1 -->
+        <!-- Section 1: About Us -->
         <section class="sec1 width" id="about-us">
             <div class="about max-width">
                 <img src="image/about-us.jpg" alt="Lounging Area">
-                <div>
+                <div class="about-content">
                     <h2>About Us</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto error eum molestiae, porro
@@ -68,6 +78,7 @@
                         mollitia similique! Totam, quibusdam tempora cum nostrum voluptates numquam ut molestiae
                         consequatur, recusandae nemo facere praesentium.
                     </p>
+
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam odit voluptates iste asperiores,
                         magnam, rerum consequuntur unde amet, tempora odio voluptatum adipisci veniam? Consequuntur
@@ -77,7 +88,7 @@
                 </div>
             </div>
         </section>
-        <!-- Section 2-->
+        <!-- Section 2: Our Services, five cards-->
         <section class="sec2 width" id="service">
             <div class="cards max-width">
                 <h2>Our Services</h2>
@@ -89,7 +100,7 @@
                         architecto, tempora est molestias illo nostrum veniam exercitationem sapiente eveniet atque quae
                         repellat velit aliquam pariatur consequuntur quasi!
                     </p>
-                    <a href="#" class="btn">Digital Plans<i class="fa-solid fa-play"></i></a>
+                    <a href="#" class="btn"> Digital Plans <i class="fa-solid fa-play"></i></a>
                 </div>
                 <div class="marketing card">
                     <img src="image/marketing.jpg" alt="A computer on a desk">
@@ -99,17 +110,17 @@
                         tempora illo? Repudiandae mollitia nostrum atque architecto beatae iusto id esse molestias.
                         Molestiae sint soluta consequatur?
                     </p>
-                    <a href="#" class="btn">Marketing Plans<i class="fa-solid fa-play"></i></a>
+                    <a href="#" class="btn">Marketing Plans <i class="fa-solid fa-play"></i> </a>
                 </div>
                 <div class="video card">
                     <img src="image/video.jpg" alt="People using phone">
                     <h3>Video Production</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum incidunt eligendi nobis sapiente
-                        fugiat dicta voluptate. Aut, beatae, eius accusantium adipisci minus modi totam repellendus
-                        temporibus optio ducimus in at?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus pariatur asperiores laboriosam
+                        accusantium suscipit. Quidem, dolores! Officia fugit, repudiandae sint, delectus recusandae
+                        voluptates aspernatur perspiciatis optio dolorem libero, eos id!
                     </p>
-                    <a href="#" class="btn">Video Plans<i class="fa-solid fa-play"></i></a>
+                    <a href="#" class="btn">Video Plans <i class="fa-solid fa-play"></i></a>
                 </div>
                 <div class="web card">
                     <img src="image/web.jpg" alt="A phone and a pen">
@@ -119,21 +130,21 @@
                         accusantium suscipit. Quidem, dolores! Officia fugit, repudiandae sint, delectus recusandae
                         voluptates aspernatur perspiciatis optio dolorem libero, eos id!
                     </p>
-                    <a href="#" class="btn">Web Plans<i class="fa-solid fa-play"></i></a>
+                    <a href="#" class="btn">Web Plans <i class="fa-solid fa-play"></i></a>
                 </div>
                 <div class="print card">
                     <img src="image/print.jpg" alt="Colorful newsracks on the street">
                     <h3>Print</h3>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum veritatis perferendis autem
-                        explicabo adipisci, commodi expedita perspiciatis praesentium distinctio deleniti numquam harum,
-                        itaque suscipit porro provident dicta tempore iste ipsam.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus pariatur asperiores laboriosam
+                        accusantium suscipit. Quidem, dolores! Officia fugit, repudiandae sint, delectus recusandae
+                        voluptates aspernatur perspiciatis optio dolorem libero, eos id!
                     </p>
-                    <a href="#" class="btn">Print Plans<i class="fa-solid fa-play"></i></a>
+                    <a href="#" class="btn">Print Plans <i class="fa-solid fa-play"></i></a>
                 </div>
             </div>
         </section>
-        <!-- Section 3 -->
+        <!-- Section 3: Our Vison -->
         <section class="sec3 width" id="vison">
             <div class="max-width">
                 <h3>Our Vison</h3>
@@ -142,15 +153,15 @@
                     soluta maiores error ex magni enim laborum, accusantium dolore, natus cupiditate cum aut
                     sapiente doloremque. Obcaecati, recusandae? Saepe?
                 </p>
-                <a href="#" class="learn-btn">Learn More<i class="fa-solid fa-play"></i></a>
+                <a href="#" class="learn-btn">Learn More <i class="fa-solid fa-play"></i></a>
             </div>
         </section>
-        <!-- Section 4 -->
+        <!-- Section 4: Our Team-->
         <section class="sec4 width" id="team">
-            <div class="max-width">
+            <div class="team-content max-width">
                 <h2>Our Team</h2>
-                <img src="image/john.jpg" alt="A man">
-                <div class="john">
+                <img src="image/john.jpg" alt="A man" class="john">
+                <div class="john-text teamcard" >
                     <h3>John Doe</h3>
                     <h4>CEO and Co-owner</h4>
                     <p>
@@ -159,8 +170,8 @@
                         repellendus ipsam eius sapiente accusantium?
                     </p>
                 </div>
-                <img src="image/bob.jpg" alt="A man with glasses">
-                <div class="bob">
+                <img src="image/bob.jpg" alt="A man with glasses" class="bob">
+                <div class="bob-text teamcard">
                     <h3>Bob Rite</h3>
                     <h4>CFO and Co-owner</h4>
                     <p>
@@ -171,14 +182,14 @@
                 </div>
             </div>
         </section>
-        <!-- Section 5 -->
+        <!-- Section 5: Contact Us -->
         <section class="sec5 width" id="contact">
-            <div class="max-width">
+            <div class="contact-us max-width">
                 <h2>Contact Us</h2>
-                <div class="message">
+                <div class="contact-info">
                     <h3>Send us a message</h3>
-                    <!--Adding a form-->
-                    <form action="index.html" method="get">
+                    <!--Adding a contact form-->
+                    <form action="index.html" method="get" class="contact-form">
                         <div>
                             <label for="fullname">Full Name</label>
                             <input id="fullname" type="text" name="name">
@@ -195,7 +206,7 @@
                     </form>
 
                 </div>
-                <div>
+                <div class="operation">
                     <h3>Hours of operation</h3>
                     <!--Adding table for hours of operation-->
                     <table>
@@ -218,6 +229,7 @@
                     </table>
 
                 </div>
+                <!--Adding a embeded map-->
                 <div class="map">
                     <h3>Location</h3>
                     <iframe
